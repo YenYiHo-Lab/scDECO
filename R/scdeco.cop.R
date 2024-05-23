@@ -10,6 +10,9 @@
 #'
 #' @import msm
 #'
+#' @importFrom stats cor cov dbeta dgamma dnorm pbeta pgamma pnbinom pnorm qbeta qgamma qnbinom qnorm rbinom rnbinom rnorm rpois runif sd update var
+#'
+#'
 #' @return matrix with mcmc samples as rows and columns corresponding to the different parameters
 #' @export
 #'
