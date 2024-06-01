@@ -36,7 +36,7 @@
 #'                     alpha1.true=alpha1.use, alpha2.true=alpha2.use,
 #'                     tau.true=tau.use, w=w.use)
 #' mcmc.out <- scdeco.cop(y=y.use, x=x.use, marginals=marginals.use, w=w.use,
-#'                       n.mcmc=10, burn=1, thin=1) # n.mcmc=1000, burn=100, thin=5)
+#'                       n.mcmc=10, burn=0, thin=1) # n.mcmc=1000, burn=100, thin=5)
 #'
 #' lowerupper <- t(apply(mcmc.out, 2, quantile, c(0.025, 0.5, 0.975)))
 #' estmat <- cbind(lowerupper[,1],
@@ -320,7 +320,7 @@ llike.GA = function(y,z,mu,alpha,p,rho){
 
   if(length(id0)>0){
     llik = llik + sum(pnorm(qnorm(p[id0]),mean=rho[id0]*z[id0],
-                            sd=sqrt(1-rho[id0]^2),log=T),na.rm=T)
+                            sd=sqrt(1-rho[id0]^2),log.p=T),na.rm=T)
   }
   return(llik)}
 
@@ -340,7 +340,7 @@ llike.Beta = function(y,z,mu,alpha,p,rho){
 
   if(length(id0)>0){
     llik = llik + sum(pnorm(qnorm(p[id0]),mean=rho[id0]*z[id0],
-                            sd=sqrt(1-rho[id0]^2),log=T),na.rm=T)
+                            sd=sqrt(1-rho[id0]^2),log.p=T),na.rm=T)
   }
   return(llik)}
 
