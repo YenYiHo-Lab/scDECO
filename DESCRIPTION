@@ -2,9 +2,24 @@ Package: scDECO
 Type: Package
 Title: Estimating Dynamic Correlation
 Version: 0.1.0
-Author: Zichen Ma, Zhen Yang, Yen-Yi Ho, Anderson Bussing
-Maintainer: Anderson Bussing <abussing@email.sc.edu>
-Description: Contains functions for simulating from and fitting dynamic correlation models.
+Authors@R: 
+  c(person(given = "Anderson",
+           family = "Bussing",
+           role = c("aut", "cre"),
+           email = "abussing@email.sc.edu"),
+    person(given = "Yen-Yi",
+           family = "Ho",
+           role = c("aut", "ths"),
+           email = "hoyen@stat.sc.edu"),
+    person(given = "Zichen",
+           family = "Ma",
+           role = "aut",
+           email = "zma@colgate.edu"),
+    person(given = "Zhen",
+           family = "Yang",
+           role = "aut",
+           email = "zheny@email.sc.edu"))
+Description: scDECO is an R package for estimating differential co-expression in single-cell RNA-seq data. Differential co-expression refers to correlation between two random variables changing with respect to the value of some covariate(s). The package contains implementations for two different Bayesian models: scDECO.cop fits a bivariate Gaussian copula model with flexible, covariate-dependent, optionally zero-inflated marginals, while scDECO.pg fits a zero-inflated bivariate Poisson-Gamma model with correlation imparted through a latent bivariate normal variable. Ma, Zichen, Shannon W. Davis, and Yen‐Yi Ho <doi:10.1111/biom.13701> Yang, Zhen, and Yen-Yi Ho <doi:10.1111/biom.13457>
 Imports: MASS, rjags, msm
 License: GPL (>= 3)
 Encoding: UTF-8
