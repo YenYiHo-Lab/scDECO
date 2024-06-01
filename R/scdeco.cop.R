@@ -17,7 +17,7 @@
 #' @export
 #'
 #' @examples
-#' n <- 2500
+#' n <- 1000
 #' x.use = rnorm(n)
 #' w.use = runif(n,-1,1)
 #' eta1.use = c(-2.2, 0.7)
@@ -36,7 +36,7 @@
 #'                     alpha1.true=alpha1.use, alpha2.true=alpha2.use,
 #'                     tau.true=tau.use, w=w.use)
 #' mcmc.out <- scdeco.cop(y=y.use, x=x.use, marginals=marginals.use, w=w.use,
-#'                      n.mcmc=1000, burn=100, thin=5)
+#'                       n.mcmc=100, burn=10, thin=1) # n.mcmc=1000, burn=100, thin=5)
 #'
 #' lowerupper <- t(apply(mcmc.out, 2, quantile, c(0.025, 0.5, 0.975)))
 #' estmat <- cbind(lowerupper[,1],
