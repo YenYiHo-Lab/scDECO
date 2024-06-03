@@ -19,7 +19,7 @@ Authors@R:
            family = "Yang",
            role = "aut",
            email = "zheny@email.sc.edu"))
-Description: Implementations for simulating from and fitting two different Bayesian models of differential co-expression. scDECO.cop fits the bivariate Gaussian copula model from Zichen Ma, Shannon W. Davis, Yen-Yi Ho (2023) <doi:10.1111/biom.13701>, while scDECO.pg fits the bivariate Poisson-Gamma model from Zhen Yang, Yen-Yi Ho (2022) <doi:10.1111/biom.13457>.
+Description: Implementations for two different Bayesian models of differential co-expression. scdeco.cop() fits the bivariate Gaussian copula model from Zichen Ma, Shannon W. Davis, Yen-Yi Ho (2023) <doi:10.1111/biom.13701>, while scdeco.pg() fits the bivariate Poisson-Gamma model from Zhen Yang, Yen-Yi Ho (2022) <doi:10.1111/biom.13457>.
 Imports: MASS, rjags, msm
 License: GPL (>= 3)
 Encoding: UTF-8
