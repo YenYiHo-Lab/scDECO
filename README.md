@@ -47,7 +47,7 @@ Quick video tutorial on the package:
 ## Installation
 
 ```{r}
-devtools::install_github("YenYiHo-Lab/scDECO")
+install.packages("scDECO")
 library(scDECO)
 ```
 
